@@ -1,0 +1,41 @@
+// BOARD COLOR CLASSES
+body{
+
+    // BLACK TO WHITE SHADE
+    .border-white{border-color: $white !important;}
+    .border-FC{border-color: $colorFCF !important;}
+    .border-FABC{border-color: $colorFABC !important;}
+    .border-F2{border-color: $colorF2F !important;}
+    .border-CE{border-color: $colorCE !important;}
+    .border-EE{border-color: $colorEE !important;}
+    .border-D9{border-color: $colorD9 !important;}
+    .border-DD{border-color: $colorDDD !important;}
+    .border-BF{border-color: $colorBF !important;}
+    .border-BE{border-color: $colorBE !important;}
+    .border-99{border-color: $color999 !important;}
+    .border-88{border-color: $color888 !important;}
+    .border-66{border-color: $color666 !important;}
+    .border-4C{border-color: $color4C !important;}
+    .border-33{border-color: $color333 !important;}
+    .border-1D{border-color: $color1D !important;}
+    .border-15{border-color: $color15 !important;}
+    .border-black{border-color: $black !important;}
+    // SOLAID COLORS
+    .border-green{border-color: $green !important;}
+    .border-purple{border-color: $purple !important;}
+    .border-yellow{border-color: $yellow !important;}
+    .border-blue{border-color: $blue !important;}
+    .border-orange{border-color: $orange !important;}
+    .border-red{border-color: $red !important;}
+    .border-brown{border-color: $brown !important;}
+    // LIGHT COLOR
+    .border-light-border{background-color: $light-green !important;}
+    .border-light-blue{border-color: $light-blue !important;}
+    .border-light-blue2{border-color: $light-blue2 !important;}
+    .border-light-purple{border-color: $light-purple !important;}
+    .border-light-orange{border-color: $light-orange !important;}
+    .border-light-red{border-color: $light-red !important;}
+    .border-light-yellow{border-color: $light-yellow !important;}
+}
+
+// BORDER WIDTH

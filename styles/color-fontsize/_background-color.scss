@@ -1,0 +1,64 @@
+
+
+// BACKGROUND COLOR CLASSES
+body{
+    .bg-white{background-color: $white !important;}
+    .bg-FC{background-color: $colorFCF !important;}
+    .bg-FABC{background-color: $colorFABC !important;}
+    .bg-F2{background-color: $colorF2F !important;}
+    .bg-CE{background-color: $colorCE !important;}
+    .bg-EE{background-color: $colorEE !important;}
+    .bg-E9{background-color: $colorE9 !important;}
+    .bg-EB{background-color: $colorEB !important;}
+    .bg-D9{background-color: $colorD9 !important;}
+    .bg-DD{background-color: $colorDDD !important;}
+    .bg-BF{background-color: $colorBF !important;}
+    .bg-BE{background-color: $colorBE !important;}
+    .bg-99{background-color: $color999 !important;}
+    .bg-66{background-color: $color666 !important;}
+    .bg-4C{background-color: $color4C !important;}
+    .bg-33{background-color: $color333 !important;}
+    .bg-1D{background-color: $color1D !important;}
+    .bg-15{background-color: $color15 !important;}
+    .bg-black{background-color: $black !important;}
+    // SOLAID COLORS
+    .bg-green{background-color: $green !important;}
+    .bg-purple{background-color: $purple !important;}
+    .bg-yellow{background-color: $yellow !important;}
+    .bg-blue{background-color: $blue !important;}
+    .bg-orange{background-color: $orange !important;}
+    .bg-red{background-color: $red !important;}
+    .bg-brown{background-color: $brown !important;}
+    
+    // LIGHT COLOR
+    .bg-light-green{background-color: $light-green !important;}
+    .bg-light-blue{background-color: $light-blue !important;}
+    .bg-light-purple{background-color: $light-purple !important;}
+    .bg-light-orange{background-color: $light-orange !important;}
+    .bg-light-yellow{background-color: $light-yellow !important;}
+    .bg-light-blue2{background-color: $light-blue2 !important;}
+    .bg-light-purple2{background-color: $light-purple2 !important;}
+    .bg-light-yellow{background-color: $light-yellow !important;}
+    .bg-light-red{background-color: $light-red !important;}
+    .bg-light-orange{background-color: $light-orange !important;}
+    
+    .bg-light-red{background-color: $light-red !important;}
+    
+    // GARDIENT BACKGOUND COLORS
+    .gbg-green{background: $green-gardient;}
+    .gbg-purple{background: $purple-gardient;}
+    .gbg-yellow{background: $yellow-gardient;}
+    .gbg-blue{background: $blue-gardient;}
+    .gbg-orange{background: $orange-gardient;}
+    .gbg-red{background: $red-gardient;}
+    .gbg-grey{background: $grey-gardient;}
+    
+    .bg-none{background-color: transparent !important;}
+    
+    
+    // HOVER BG
+    .theam-hover:hover{
+        background-color: $colorF2F !important;
+    }
+}
+// BLACK TO WHITE SHADE

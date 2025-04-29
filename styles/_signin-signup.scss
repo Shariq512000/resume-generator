@@ -1,0 +1,133 @@
+.loginPage{
+    .mainBody{
+        padding: 70px 0 60px 12%;
+        width: 100%;
+    }
+
+    a{
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
+
+.logIn-fromMain{
+    padding: 0 70px;
+}
+
+
+.loginBox-fFeild {
+    position: relative;
+
+    input {
+        width: 100%;
+        height: 60px;
+        padding: 18px 70px 18px 30px;
+    }
+
+    button{
+        transition: all 0.4s ease-in-out;
+        height: 30px;
+        width: 35px;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+
+        &:hover {
+            background-color: #f7f7f7;
+        }
+    }
+
+    .loginLoader{
+        color: #999;
+        width: 23px;
+        height: 23px;
+        font-size: 10px;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .checkBtn {
+        transition: all 0.4s ease-in-out;
+        height: 30px;
+        width: 35px;
+        position: absolute;
+        right: 15px;
+        top: 5px;
+        bottom: 0;
+        margin: auto;
+
+        &:hover {
+            background-color: #f7f7f7;
+        }
+    }
+}
+
+.otherLogIn{
+    .hd{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &::after, &::before{
+            content: '';
+            width: 20%;
+            height: 1px;
+            background-color: #ddd;
+            flex-shrink: 0;
+        }
+
+        &::after{
+            left: auto;
+            right: 0;
+        }
+    }
+}
+
+.loginSocialIcon{
+    a{
+        width: 65px;
+        height: 65px;
+        
+        &:hover{
+            opacity: 1;
+            transform: scale(1.05);
+        }
+    }
+}
+
+
+.signUp-fromArea{
+    padding: 30px 16%;
+    width: 100%;
+    height: 100%;
+    min-height: calc(100vh - 120px);
+
+    a{
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
+
+
+
+
+.signUp-cont {
+    width: 100%;
+    height: 100%;
+    min-height: calc(100vh - 120px);
+}
+
+
+.signUp-feild{
+    input{
+        width: 100%;
+    }
+}
