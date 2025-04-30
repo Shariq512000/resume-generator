@@ -12,6 +12,37 @@
 	transition: all 0.2s ease-in-out;
 }
 
+.currentStage__card_items {
+    width: 100%;
+    margin: auto;
+
+    .icon {
+        width: 35px;
+        height: 35px;
+        position: relative;
+        z-index: 2;
+        margin: auto auto auto;
+    }
+
+    .line {
+        height: 2px;
+        width: calc(100% - 12px);
+        position: absolute;
+        top: 18px;
+        right: -60%;
+    }
+
+    &:last-child(1){
+        width: auto;
+    }
+
+    &:last-child(2){
+        .line{
+            width: calc(100% - 30px);
+        }
+    }
+}
+
 .mainBody{
     width: calc(100% - 280px);
     flex-shrink: 0;

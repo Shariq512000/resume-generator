@@ -4,7 +4,7 @@ import { Button, Col, Form, InputGroup, Modal, Row } from 'react-bootstrap'
 // import { GlobalContext } from '../context/Context';
 // import axios from 'axios';
 // import InfiniteScroll from 'react-infinite-scroller';
-import { basePath } from '@/next.config';
+// import { basePath } from '@/next.config';
 import { useRouter } from 'next/router';
 import { Card, Dropdown } from "react-bootstrap"
 import moment from 'moment';
@@ -240,7 +240,7 @@ const Timer = () => {
                             }}>
                                 X
                             </div>
-                            <form>
+                            {/* <form>
                                 <h4 className='text-center pt-2 fs-20 fg-33 fw-5'> How Was Your Day?</h4>
                                 <div className="rating">
                                     <div className="field">
@@ -268,7 +268,7 @@ const Timer = () => {
                                         <label for="VeryHappy" title="Very Happy"> <img src={`${basePath}/mood/very_happy.png`} /> <span className='fs-12 fg-66 fw-4 text-center'> Very Happy</span> </label>
                                     </div>
                                 </div>
-                            </form>
+                            </form> */}
                         </div>
                     </div>
                     :

@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
 // import { GlobalContext } from '../context/Context';
 import { Avatar, Divider } from '@mui/material';
 // import axios from 'axios';
-import { basePath } from '@/next.config';
+// import { basePath } from '@/next.config';
 
 const Aside = () => {
 
@@ -163,7 +163,7 @@ const Aside = () => {
                         <div className="header-profile">
                             <div className="header-profileAvatar2">
                                 {/* <Avatar className='bg-green avatarImgs' alt="Remy Sharp" sx={{width:30, height:30} } src={state?.user?.profile_picture} >{state?.user?.name?.slice(0, 1)}</Avatar> */}
-                                <Avatar className='rounded-0 bg-green2' sx={{height:28 , width: 104}} alt="Remy Sharp"  src={`${basePath}/dino.png`} >{"Shariq"?.slice(0, 1)}</Avatar>
+                                {/* <Avatar className='rounded-0 bg-green2' sx={{height:28 , width: 104}} alt="Remy Sharp"  src={`${basePath}/dino.png`} >{"Shariq"?.slice(0, 1)}</Avatar> */}
                             </div>
                             {/* <div className="header-profileName"> */}
                                 {/* <h6>{((state.user.name?.length > 15) ? `${state.user.name.slice(0, 15)}...` : state.user.name )}</h6> */}

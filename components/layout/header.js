@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import moment from "moment";
 // import axios from "axios";
 import { Avatar, Badge } from "@mui/material";
-import { basePath } from "@/next.config";
+// import { basePath } from "@/next.config";
 import Head from "next/head";
 // import parse from 'html-react-parser';
 
