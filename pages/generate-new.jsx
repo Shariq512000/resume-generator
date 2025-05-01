@@ -19,11 +19,11 @@ const GenerateNew = () => {
           fullName: '',
           email: '',
           phoneNumber: '',
-          isLinkedIn: '',
+          isLinkedIn: 'yes',
           linkedInUrl: '',
           jobTile: '',
           position: '',
-          currentJob: '',
+          currentJob: '-',
           pastExperience: '',
           qualification: '',
           certification: '',
@@ -117,13 +117,13 @@ const GenerateNew = () => {
   return (
     <div className="bg-gray-100 min-h-screen generate-page flex flex-column items-center justify-center p-6">
         {(currentStep != 6) ?
-          <div className="py-5 text-center w-75">
+          <div className="py-5 text-center w-50">
             <div className="currentStage__card pb-4">
               <div className="d-flex">
 
                 <div className="currentStage__card_items position-relative">
                   <div className="d-flex align-items-stretch flex-column gap-3">
-                    <div className=" flex-shrink-0 d-flex flex-column ps-5 ">
+                    <div className=" flex-shrink-0 d-flex flex-column ps-0 ">
                       <span className={`border border-2 rounded-circle icon d-flex align-items-center justify-content-center bg-${(currentStep > 1) ? "blue" : "DD"}`}>
                         <span className="fill-1 fg-white">
                           {(currentStep > 1) ? <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="m423.23-309.85 268.92-268.92L650-620.92 423.23-394.15l-114-114L267.08-466l156.15 156.15ZM480.07-100q-78.84 0-148.21-29.92t-120.68-81.21q-51.31-51.29-81.25-120.63Q100-401.1 100-479.93q0-78.84 29.92-148.21t81.21-120.68q51.29-51.31 120.63-81.25Q401.1-860 479.93-860q78.84 0 148.21 29.92t120.68 81.21q51.31 51.29 81.25 120.63Q860-558.9 860-480.07q0 78.84-29.92 148.21t-81.21 120.68q-51.29 51.31-120.63 81.25Q558.9-100 480.07-100Zm-.07-60q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg> : <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="M480.07-100q-78.84 0-148.21-29.92t-120.68-81.21q-51.31-51.29-81.25-120.63Q100-401.1 100-479.93q0-78.84 29.92-148.21t81.21-120.68q51.29-51.31 120.63-81.25Q401.1-860 479.93-860q78.84 0 148.21 29.92t120.68 81.21q51.31 51.29 81.25 120.63Q860-558.9 860-480.07q0 78.84-29.92 148.21t-81.21 120.68q-51.29 51.31-120.63 81.25Q558.9-100 480.07-100Zm-.07-60q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>}
@@ -131,7 +131,7 @@ const GenerateNew = () => {
                       </span>
                       <div className="title pt-3">
                         <h6 className="fg-1D fs-16 fw-5 lh-normal pb-1">
-                          Select Template
+                          Template
                         </h6>
                         {/* <p className="fg-66 fs-14 fw-4 lh-normal">
                           Create Job with details
@@ -144,7 +144,7 @@ const GenerateNew = () => {
 
                 <div className="currentStage__card_items position-relative">
                   <div className="d-flex align-items-stretch flex-column gap-3">
-                    <div className=" flex-shrink-0 d-flex flex-column ps-5">
+                    <div className=" flex-shrink-0 d-flex flex-column ps-0">
                       <span className={`border border-2 rounded-circle icon d-flex align-items-center justify-content-center bg-${(currentStep > 2) ? "blue" : "DD"}`}>
                         <span className="fill-1 fg-white">
                           {(currentStep > 2) ? <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="m423.23-309.85 268.92-268.92L650-620.92 423.23-394.15l-114-114L267.08-466l156.15 156.15ZM480.07-100q-78.84 0-148.21-29.92t-120.68-81.21q-51.31-51.29-81.25-120.63Q100-401.1 100-479.93q0-78.84 29.92-148.21t81.21-120.68q51.29-51.31 120.63-81.25Q401.1-860 479.93-860q78.84 0 148.21 29.92t120.68 81.21q51.31 51.29 81.25 120.63Q860-558.9 860-480.07q0 78.84-29.92 148.21t-81.21 120.68q-51.29 51.31-120.63 81.25Q558.9-100 480.07-100Zm-.07-60q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg> : <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="M480.07-100q-78.84 0-148.21-29.92t-120.68-81.21q-51.31-51.29-81.25-120.63Q100-401.1 100-479.93q0-78.84 29.92-148.21t81.21-120.68q51.29-51.31 120.63-81.25Q401.1-860 479.93-860q78.84 0 148.21 29.92t120.68 81.21q51.31 51.29 81.25 120.63Q860-558.9 860-480.07q0 78.84-29.92 148.21t-81.21 120.68q-51.29 51.31-120.63 81.25Q558.9-100 480.07-100Zm-.07-60q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>}
@@ -152,7 +152,7 @@ const GenerateNew = () => {
                       </span>
                       <div className="title pt-3">
                         <h6 className="fg-1D fs-16 fw-5 lh-normal pb-1">
-                          Enter Your Details
+                          Personal Details
                         </h6>
                         {/* <p className="fg-66 fs-14 fw-4 lh-normal">
                         Set application format
@@ -165,7 +165,7 @@ const GenerateNew = () => {
 
                 <div className="currentStage__card_items position-relative">
                   <div className="d-flex align-items-stretch flex-column gap-3">
-                    <div className=" flex-shrink-0 d-flex flex-column ps-5">
+                    <div className=" flex-shrink-0 d-flex flex-column ps-0">
                       <span className={`border border-2 rounded-circle icon d-flex align-items-center justify-content-center bg-${(currentStep > 3) ? "blue" : "DD"}`}>
                         <span className="fill-1 fg-white">
                           {(currentStep > 3) ? <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="m423.23-309.85 268.92-268.92L650-620.92 423.23-394.15l-114-114L267.08-466l156.15 156.15ZM480.07-100q-78.84 0-148.21-29.92t-120.68-81.21q-51.31-51.29-81.25-120.63Q100-401.1 100-479.93q0-78.84 29.92-148.21t81.21-120.68q51.29-51.31 120.63-81.25Q401.1-860 479.93-860q78.84 0 148.21 29.92t120.68 81.21q51.31 51.29 81.25 120.63Q860-558.9 860-480.07q0 78.84-29.92 148.21t-81.21 120.68q-51.29 51.31-120.63 81.25Q558.9-100 480.07-100Zm-.07-60q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg> : <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="M480.07-100q-78.84 0-148.21-29.92t-120.68-81.21q-51.31-51.29-81.25-120.63Q100-401.1 100-479.93q0-78.84 29.92-148.21t81.21-120.68q51.29-51.31 120.63-81.25Q401.1-860 479.93-860q78.84 0 148.21 29.92t120.68 81.21q51.31 51.29 81.25 120.63Q860-558.9 860-480.07q0 78.84-29.92 148.21t-81.21 120.68q-51.29 51.31-120.63 81.25Q558.9-100 480.07-100Zm-.07-60q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>}
@@ -173,7 +173,7 @@ const GenerateNew = () => {
                       </span>
                       <div className="title pt-3">
                         <h6 className="fg-1D fs-16 fw-5 lh-normal pb-1">
-                            Enter Job Details
+                            Job Details
                         </h6>
                         {/* <p className="fg-66 fs-14 fw-4 lh-normal">
                         Application Under process
@@ -186,7 +186,7 @@ const GenerateNew = () => {
 
                 <div className="currentStage__card_items position-relative">
                   <div className="d-flex align-items-stretch flex-column gap-3">
-                    <div className=" flex-shrink-0 d-flex flex-column ps-5">
+                    <div className=" flex-shrink-0 d-flex flex-column ps-0">
                       <span className={`border border-2 rounded-circle icon d-flex align-items-center justify-content-center bg-${(currentStep > 4) ? "blue" : "DD"}`}>
                         <span className="fill-1 fg-white">
                         {(currentStep > 4) ? <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="m423.23-309.85 268.92-268.92L650-620.92 423.23-394.15l-114-114L267.08-466l156.15 156.15ZM480.07-100q-78.84 0-148.21-29.92t-120.68-81.21q-51.31-51.29-81.25-120.63Q100-401.1 100-479.93q0-78.84 29.92-148.21t81.21-120.68q51.29-51.31 120.63-81.25Q401.1-860 479.93-860q78.84 0 148.21 29.92t120.68 81.21q51.31 51.29 81.25 120.63Q860-558.9 860-480.07q0 78.84-29.92 148.21t-81.21 120.68q-51.29 51.31-120.63 81.25Q558.9-100 480.07-100Zm-.07-60q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg> : <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="M480.07-100q-78.84 0-148.21-29.92t-120.68-81.21q-51.31-51.29-81.25-120.63Q100-401.1 100-479.93q0-78.84 29.92-148.21t81.21-120.68q51.29-51.31 120.63-81.25Q401.1-860 479.93-860q78.84 0 148.21 29.92t120.68 81.21q51.31 51.29 81.25 120.63Q860-558.9 860-480.07q0 78.84-29.92 148.21t-81.21 120.68q-51.29 51.31-120.63 81.25Q558.9-100 480.07-100Zm-.07-60q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>}
@@ -194,7 +194,7 @@ const GenerateNew = () => {
                       </span>
                       <div className="title pt-3">
                         <h6 className="fg-1D fs-16 fw-5 lh-normal pb-1">
-                            Enter Qualification Details
+                            Academic Details
                         </h6>
                         {/* <p className="fg-66 fs-14 fw-4 lh-normal">
                         Review & Publish your job
@@ -207,7 +207,7 @@ const GenerateNew = () => {
 
                 <div className="currentStage__card_items position-relative">
                   <div className="d-flex align-items-stretch flex-column gap-3">
-                    <div className=" flex-shrink-0 d-flex flex-column ps-5">
+                    <div className=" flex-shrink-0 d-flex flex-column ps-0">
                       <span className={`border border-2 rounded-circle icon d-flex align-items-center justify-content-center bg-${(currentStep > 5) ? "blue" : "DD"}`}>
                         <span className="fill-1 fg-white">
                         {(currentStep > 5) ? <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="m423.23-309.85 268.92-268.92L650-620.92 423.23-394.15l-114-114L267.08-466l156.15 156.15ZM480.07-100q-78.84 0-148.21-29.92t-120.68-81.21q-51.31-51.29-81.25-120.63Q100-401.1 100-479.93q0-78.84 29.92-148.21t81.21-120.68q51.29-51.31 120.63-81.25Q401.1-860 479.93-860q78.84 0 148.21 29.92t120.68 81.21q51.31 51.29 81.25 120.63Q860-558.9 860-480.07q0 78.84-29.92 148.21t-81.21 120.68q-51.29 51.31-120.63 81.25Q558.9-100 480.07-100Zm-.07-60q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg> : <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="M480.07-100q-78.84 0-148.21-29.92t-120.68-81.21q-51.31-51.29-81.25-120.63Q100-401.1 100-479.93q0-78.84 29.92-148.21t81.21-120.68q51.29-51.31 120.63-81.25Q401.1-860 479.93-860q78.84 0 148.21 29.92t120.68 81.21q51.31 51.29 81.25 120.63Q860-558.9 860-480.07q0 78.84-29.92 148.21t-81.21 120.68q-51.29 51.31-120.63 81.25Q558.9-100 480.07-100Zm-.07-60q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>}
@@ -215,7 +215,7 @@ const GenerateNew = () => {
                       </span>
                       <div className="title pt-3">
                         <h6 className="fg-1D fs-16 fw-5 lh-normal pb-1">
-                          Enter Additional Details
+                          Additional Details
                         </h6>
                         {/* <p className="fg-66 fs-14 fw-4 lh-normal">
                         Review & Publish your job
@@ -232,7 +232,7 @@ const GenerateNew = () => {
         }
         <div className="bg-white shadow-lg rounded-lg w-full max-w-4xl p-5">
             <div id="step-1" className={`${currentStep != 1 ? "hidden" : ""}`}>
-                <h2 className="text-2xl font-bold mb-4">Step 1: Choose a Template</h2>
+                <h2 className="text-2xl font-bold mb-4">Choose a Template</h2>
                 <div className="grid grid-cols-2 gap-4">
                     <div className="border p-4 rounded hover:shadow cursor-pointer" onClick={() => {formik.setFieldValue("template","1");setCurrentStep(2)}}>
                         <h3 className="text-lg font-semibold">Template 1</h3>
@@ -246,7 +246,7 @@ const GenerateNew = () => {
             </div>
 
             <div id="step-2" className={`${currentStep != 2 ? "hidden" : ""}`}>
-              <h2 className="text-2xl font-bold mb-4">Step 2: Fill Your Details</h2>
+              <h2 className="text-2xl font-bold mb-4"> Personal Details</h2>
               <form id="cvForm" onSubmit={(e) => {e.preventDefault();setCurrentStep(3)}}>
                   <div className="mb-4">
                       <ThemeInput type='text' name='fullName' value={formik.values.fullName} onChange={formik.handleChange} isLabel={true} label='Full Name' required={true} />
@@ -262,8 +262,8 @@ const GenerateNew = () => {
                       <ThemeInput type='text' name='address' value={formik.values.address} onChange={formik.handleChange} isLabel={true} label='Address' required={true} />
                   </div>
 
-                  <div className="mb-4">
-                      {/* <ThemeInput type='tel' isLabel={true} label='Phone Number' /> */}
+                  {/* <div className="mb-4">
+                     
                       <label className="block mb-1 font-bold">{"Linkedin Profile"}</label>
                       <div className="flex gap-x-8 ps-3">
                           <div className="flex gap-x-2">
@@ -276,11 +276,11 @@ const GenerateNew = () => {
                           </div>
                           
                       </div>
-                  </div>
+                  </div> */}
 
                   {(formik.values?.isLinkedIn == "yes") ?
                       <div className="mb-4">
-                          <ThemeInput type='url' isLabel={true} name='linkedInUrl' value={formik.values.linkedInUrl} onChange={formik.handleChange} label='Linkedin Url' />
+                          <ThemeInput type='url' required={true} isLabel={true} name='linkedInUrl' value={formik.values.linkedInUrl} onChange={formik.handleChange} label='Linkedin Url' />
                       </div>
                       :
                       null
@@ -293,7 +293,7 @@ const GenerateNew = () => {
             </div>
 
             <div id="step-3" className={`${currentStep != 3 ? "hidden" : ""}`}>
-              <h2 className="text-2xl font-bold mb-4">Step 3: Fill Job Details</h2>
+              <h2 className="text-2xl font-bold mb-4">Job Details</h2>
               <form id="cvForm" onSubmit={(e) => {e.preventDefault();setCurrentStep(4)}}>
                 <div className="mb-4">
                     <ThemeInput type='text' name='jobTile' value={formik.values.jobTile} onChange={formik.handleChange} isLabel={true} label='Job Title' required={true} />
@@ -304,14 +304,14 @@ const GenerateNew = () => {
                 {/* <div className="mb-4">
                     <ThemeTextarea isLabel={true} label='Summary' />
                 </div> */}
-                <div className="mb-4">
-                    {/* <ThemeInput type='text' name='currentJob' value={formik.values.currentJob} onChange={formik.handleChange} isLabel={true} label='Current Job' required={true} /> */}
+                {/* <div className="mb-4">
+                    <ThemeInput type='text' name='currentJob' value={formik.values.currentJob} onChange={formik.handleChange} isLabel={true} label='Current Job' required={true} /> 
                     <ThemeTextarea name='currentJob' value={formik.values.currentJob} onChange={formik.handleChange} isLabel={true} label='Current Job' required={true} />
-                </div>
+                </div> */}
 
                 <div className="mb-4">
                   {/* <ThemeInput type='text' name='pastExperience' value={formik.values.pastExperience} onChange={formik.handleChange} isLabel={true} label='Past Experience' required={true} /> */}
-                  <ThemeTextarea name='pastExperience' value={formik.values.pastExperience} onChange={formik.handleChange} isLabel={true} label='Past Experience' required={true} />
+                  <ThemeTextarea name='pastExperience' value={formik.values.pastExperience} onChange={formik.handleChange} isLabel={true} label='Experiences' required={true} />
                 </div>
                 <div className="flex gap-x-2">
                   <div role='button' className="bg-orange-500 d-inline-block text-white px-4 py-2 rounded" onClick={() => {setCurrentStep(2)}}>Back</div>
@@ -321,7 +321,7 @@ const GenerateNew = () => {
             </div>
 
             <div id="step-4" className={`${currentStep != 4 ? "hidden" : ""}`}>
-                <h2 className="text-2xl font-bold mb-4">Step 4: Fill Qualification Details</h2>
+                <h2 className="text-2xl font-bold mb-4">Academic Details</h2>
                 <form id="cvForm" onSubmit={(e) => {e.preventDefault();setCurrentStep(5)}}>
                     <div className="mb-4">
                         {/* <ThemeInput type='text' name='qualification' value={formik.values.qualification} onChange={formik.handleChange} isLabel={true} label='Professional Qualification' required={true} /> */}
@@ -344,7 +344,7 @@ const GenerateNew = () => {
             </div>
 
             <div id="step-5" className={`${currentStep != 5 ? "hidden" : ""}`}>
-                <h2 className="text-2xl font-bold mb-4">Step 5: Fill Additional Details</h2>
+                <h2 className="text-2xl font-bold mb-4">Additional Details</h2>
                 <form id="cvForm" onSubmit={(e) => {formik.handleSubmit(e)}}>
                     <div className="mb-4">
                         {/* <ThemeInput type='text' name='refrence' value={formik.values.refrence} onChange={formik.handleChange} isLabel={true} label='References' /> */}

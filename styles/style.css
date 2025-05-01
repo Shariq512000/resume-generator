@@ -1839,7 +1839,7 @@ header.headerMargin {
 }
 .currentStage__card_items .line {
   height: 2px;
-  width: calc(100% - 12px);
+  width: calc(100% - 0px);
   position: absolute;
   top: 18px;
   right: -60%;
