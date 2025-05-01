@@ -4,11 +4,11 @@ const ThemeTextarea = ({name="", value, isLabel=false, label="", rows="4", requi
   return (
     <>
         {isLabel ?
-            <label className="block mb-1 font-bold">{label}</label>
+            <label className="block mb-1 tw:font-bold">{label}</label>
             :
             null
         }
-        <textarea name={name} {...(value !== undefined ? { value } : {})} className="w-full border p-2 rounded" rows={rows} onChange={onChange} required={required}></textarea>
+        <textarea name={name} {...(value !== undefined ? { value } : {})} className="tw:w-full border p-2 rounded" rows={rows} onChange={onChange} required={required}></textarea>
     </>
   )
 }

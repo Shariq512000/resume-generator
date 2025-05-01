@@ -1,5 +1,5 @@
+// @import 'layout';
 @import 'funtion';
-@import 'layout';
 @import 'globelClasses';
 @import 'header-footer-aside';
 @import 'signin-signup';
@@ -29,7 +29,7 @@
         width: calc(100% - 0px);
         position: absolute;
         top: 18px;
-        right: -60%;
+        right: -55%;
     }
 
     &:last-child(1){

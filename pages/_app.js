@@ -1,8 +1,8 @@
 import Aside from '@/components/layout/aside';
 import Header from '@/components/layout/header';
 import Timer from '@/components/layout/timer';
-import '@/styles/globals.css';
 import '@/styles/style.css';
+import '@/styles/globals.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import { Container } from 'react-bootstrap';

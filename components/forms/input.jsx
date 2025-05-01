@@ -4,11 +4,11 @@ const ThemeInput = ({type="text", name="", value, isLabel=false, label="", requi
   return (
     <>
         {(isLabel) ?
-            <label className="block mb-1 font-bold">{label}</label>
+            <label className="tw:block tw:mb-1 tw:font-bold">{label}</label>
             :
             null
         }
-        <input type={type} name={name} className="w-full border p-2 rounded" {...(value !== undefined ? { value } : {})} onChange={onChange} required={required} />
+        <input type={type} name={name} className="tw:w-full border p-2 rounded" {...(value !== undefined ? { value } : {})} onChange={onChange} required={required} />
     </>
   )
 }

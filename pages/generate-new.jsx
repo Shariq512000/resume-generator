@@ -115,7 +115,7 @@ const GenerateNew = () => {
     }
 
   return (
-    <div className="bg-gray-100 min-h-screen generate-page flex flex-column items-center justify-center p-6">
+    <div className="tw:bg-gray-100 tw:min-h-screen generate-page tw:flex flex-column tw:items-center tw:justify-center tw:p-6">
         {(currentStep != 6) ?
           <div className="py-5 text-center w-50">
             <div className="currentStage__card pb-4">
@@ -230,23 +230,23 @@ const GenerateNew = () => {
           :
           null
         }
-        <div className="bg-white shadow-lg rounded-lg w-full max-w-4xl p-5">
-            <div id="step-1" className={`${currentStep != 1 ? "hidden" : ""}`}>
-                <h2 className="text-2xl font-bold mb-4">Choose a Template</h2>
-                <div className="grid grid-cols-2 gap-4">
-                    <div className="border p-4 rounded hover:shadow cursor-pointer" onClick={() => {formik.setFieldValue("template","1");setCurrentStep(2)}}>
-                        <h3 className="text-lg font-semibold">Template 1</h3>
-                        <p className="text-sm text-gray-500">Simple and clean design</p>
+        <div className="tw:bg-white tw:shadow-lg tw:rounded-lg tw:w-full tw:max-w-4xl p-5">
+            <div id="step-1" className={`${currentStep != 1 ? "tw:hidden" : ""}`}>
+                <h2 className="tw:text-2xl tw:font-bold mb-4">Choose a Template</h2>
+                <div className="tw:grid tw:grid-cols-2 tw:gap-4">
+                    <div className="border p-4 rounded tw:hover:shadow tw:cursor-pointer" onClick={() => {formik.setFieldValue("template","1");setCurrentStep(2)}}>
+                        <h3 className="tw:text-lg tw:font-semibold">Template 1</h3>
+                        <p className="tw:text-sm tw:text-gray-500">Simple and clean design</p>
                     </div>
-                    <div className="border p-4 rounded hover:shadow cursor-pointer" onClick={() => {formik.setFieldValue("template","2");setCurrentStep(2)}}>
-                        <h3 className="text-lg font-semibold">Template 2</h3>
-                        <p className="text-sm text-gray-500">Modern and professional</p>
+                    <div className="border p-4 rounded tw:hover:shadow tw:cursor-pointer" onClick={() => {formik.setFieldValue("template","2");setCurrentStep(2)}}>
+                        <h3 className="tw:text-lg tw:font-semibold">Template 2</h3>
+                        <p className="tw:text-sm tw:text-gray-500">Modern and professional</p>
                     </div>
                 </div>
             </div>
 
-            <div id="step-2" className={`${currentStep != 2 ? "hidden" : ""}`}>
-              <h2 className="text-2xl font-bold mb-4"> Personal Details</h2>
+            <div id="step-2" className={`${currentStep != 2 ? "tw:hidden" : ""}`}>
+              <h2 className="tw:text-2xl tw:font-bold mb-4"> Personal Details</h2>
               <form id="cvForm" onSubmit={(e) => {e.preventDefault();setCurrentStep(3)}}>
                   <div className="mb-4">
                       <ThemeInput type='text' name='fullName' value={formik.values.fullName} onChange={formik.handleChange} isLabel={true} label='Full Name' required={true} />
@@ -285,15 +285,15 @@ const GenerateNew = () => {
                       :
                       null
                   }
-                  <div className="flex gap-x-2">
-                    <div role='button' className="bg-orange-500 d-inline-block text-white px-4 py-2 rounded" onClick={() => {setCurrentStep(1)}}>Back</div>
-                    <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">Next</button>
+                  <div className="tw:flex tw:gap-x-2">
+                    <div role='button' className="tw:bg-orange-500 d-inline-block text-white px-4 py-2 rounded" onClick={() => {setCurrentStep(1)}}>Back</div>
+                    <button type="submit" className="tw:bg-blue-500 text-white px-4 py-2 rounded">Next</button>
                   </div>
               </form>
             </div>
 
-            <div id="step-3" className={`${currentStep != 3 ? "hidden" : ""}`}>
-              <h2 className="text-2xl font-bold mb-4">Job Details</h2>
+            <div id="step-3" className={`${currentStep != 3 ? "tw:hidden" : ""}`}>
+              <h2 className="tw:text-2xl tw:font-bold mb-4">Job Details</h2>
               <form id="cvForm" onSubmit={(e) => {e.preventDefault();setCurrentStep(4)}}>
                 <div className="mb-4">
                     <ThemeInput type='text' name='jobTile' value={formik.values.jobTile} onChange={formik.handleChange} isLabel={true} label='Job Title' required={true} />
@@ -313,15 +313,15 @@ const GenerateNew = () => {
                   {/* <ThemeInput type='text' name='pastExperience' value={formik.values.pastExperience} onChange={formik.handleChange} isLabel={true} label='Past Experience' required={true} /> */}
                   <ThemeTextarea name='pastExperience' value={formik.values.pastExperience} onChange={formik.handleChange} isLabel={true} label='Experiences' required={true} />
                 </div>
-                <div className="flex gap-x-2">
-                  <div role='button' className="bg-orange-500 d-inline-block text-white px-4 py-2 rounded" onClick={() => {setCurrentStep(2)}}>Back</div>
-                  <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">Next</button>
+                <div className="tw:flex tw:gap-x-2">
+                  <div role='button' className="tw:bg-orange-500 d-inline-block text-white px-4 py-2 rounded" onClick={() => {setCurrentStep(2)}}>Back</div>
+                  <button type="submit" className="tw:bg-blue-500 text-white px-4 py-2 rounded">Next</button>
                 </div>
               </form>
             </div>
 
-            <div id="step-4" className={`${currentStep != 4 ? "hidden" : ""}`}>
-                <h2 className="text-2xl font-bold mb-4">Academic Details</h2>
+            <div id="step-4" className={`${currentStep != 4 ? "tw:hidden" : ""}`}>
+                <h2 className="tw:text-2xl tw:font-bold mb-4">Academic Details</h2>
                 <form id="cvForm" onSubmit={(e) => {e.preventDefault();setCurrentStep(5)}}>
                     <div className="mb-4">
                         {/* <ThemeInput type='text' name='qualification' value={formik.values.qualification} onChange={formik.handleChange} isLabel={true} label='Professional Qualification' required={true} /> */}
@@ -336,15 +336,15 @@ const GenerateNew = () => {
                         <ThemeTextarea name='skills' value={formik.values.skills} onChange={formik.handleChange} isLabel={true} label='Skills' required={true} />
                     </div>
 
-                    <div className="flex gap-x-2">
-                      <div role='button' className="bg-orange-500 d-inline-block text-white px-4 py-2 rounded" onClick={() => {setCurrentStep(3)}}>Back</div>
-                      <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">Next</button>
+                    <div className="tw:flex tw:gap-x-2">
+                      <div role='button' className="tw:bg-orange-500 d-inline-block text-white px-4 py-2 rounded" onClick={() => {setCurrentStep(3)}}>Back</div>
+                      <button type="submit" className="tw:bg-blue-500 text-white px-4 py-2 rounded">Next</button>
                     </div>
                 </form>
             </div>
 
-            <div id="step-5" className={`${currentStep != 5 ? "hidden" : ""}`}>
-                <h2 className="text-2xl font-bold mb-4">Additional Details</h2>
+            <div id="step-5" className={`${currentStep != 5 ? "tw:hidden" : ""}`}>
+                <h2 className="tw:text-2xl tw:font-bold mb-4">Additional Details</h2>
                 <form id="cvForm" onSubmit={(e) => {formik.handleSubmit(e)}}>
                     <div className="mb-4">
                         {/* <ThemeInput type='text' name='refrence' value={formik.values.refrence} onChange={formik.handleChange} isLabel={true} label='References' /> */}
@@ -360,9 +360,9 @@ const GenerateNew = () => {
                       <ThemeInput type='file' onChange={fileUploader} isLabel={true} label='Existing Resume' />
                     </div>
                     {(isResponse)?
-                    <div className="flex gap-x-2">
-                        <div role='button' className="bg-orange-500 d-inline-block text-white px-4 py-2 rounded" onClick={() => {setCurrentStep(4)}}>Back</div>
-                          <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
+                    <div className="tw:flex tw:gap-x-2">
+                        <div role='button' className="tw:bg-orange-500 d-inline-block text-white px-4 py-2 rounded" onClick={() => {setCurrentStep(4)}}>Back</div>
+                          <button type="submit" className="tw:bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
                         </div>
                         :
                         <CircularProgress color='#2978F1' />
@@ -372,13 +372,13 @@ const GenerateNew = () => {
                 </form>
             </div>
 
-            <div id="step-6" className={`${currentStep != 6 ? "hidden" : ""}`}>
+            <div id="step-6" className={`${currentStep != 6 ? "tw:hidden" : ""}`}>
               <h6 className='fs-20 fg-33 mb-3 text-center fw-7'>Thank You!</h6>
               <div className="px-5">
                 <p className='fs-18 fg-66 text-center px-5'>Your resume has been downloaded successfully. We wish you success in your next opportunity.</p>
               </div>
-              <div className="mt-4 flex align-items-center justify-content-center">
-                <button className="bg-blue-500 text-white px-4 py-2 rounded" onClick={() => {setCurrentStep(1)}}>Create a New Resume</button>
+              <div className="mt-4 tw:flex align-items-center justify-content-center">
+                <button className="tw:bg-blue-500 text-white px-4 py-2 rounded" onClick={() => {setCurrentStep(1)}}>Create a New Resume</button>
               </div>
             </div>
 
